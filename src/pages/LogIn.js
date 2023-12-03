@@ -13,10 +13,8 @@ const LogIn = (props) => {
   const navigate = useNavigate();
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:2500/user/log-in", {
+      .post("http://localhost:2500/user/log-in", data, {
         withCredentials: true,
-        username: data.username,
-        password: data.password,
       })
       .then((res) => {
         console.log(res.headers);
