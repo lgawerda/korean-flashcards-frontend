@@ -1,0 +1,27 @@
+.container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  text-align: center;
+}
+
+.text {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.home-link {
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--blue);
+  padding: 0.5em;
+  text-decoration: none;
+  border: solid 2px var(--black);
+  font-weight: bolder;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
