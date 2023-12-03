@@ -1,0 +1,15 @@
+.review_text {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 0.5vh;
+}
+.succeed {
+  background-color: #77dd77;
+}
+.fail {
+  background-color: #ff6961;
+}
+.review_button {
+  width: 10vw;
+  height: 10vw;
+}
