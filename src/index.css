@@ -1,13 +1,32 @@
+:root {
+  --pink: #f5a9b8;
+  --blue: #5bcefa;
+  --white: #f2f2f2;
+  --black: #333;
+}
 body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: var(--white);
+  background-attachment: fixed;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+input,
+button {
+  font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter";
+}
+
+body,
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+html {
+  font-size: 100%;
 }

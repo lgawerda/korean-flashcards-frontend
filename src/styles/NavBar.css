@@ -1,0 +1,65 @@
+.link {
+  text-decoration: none;
+  cursor: pointer;
+
+  color: var(--black);
+}
+
+.navbar_link {
+  padding: 3vh 3vw;
+  border-bottom: solid black 2px;
+}
+
+.link_container {
+  position: fixed;
+  left: -110%;
+  top: 4rem;
+  flex-direction: column;
+  background-color: var(--blue);
+  width: 100%;
+  text-align: center;
+  transition: right 0.5s;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  border-top: solid black 2px;
+
+  border-right: solid black 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+}
+
+.link_container.active {
+  left: 0%;
+}
+
+.hamburger {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  left: 3vw;
+  top: 1vh;
+}
+
+.hamburger.active .hamburger_bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger_bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .hamburger_bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger_bar {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--black);
+}
