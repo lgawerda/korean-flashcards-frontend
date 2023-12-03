@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/NavBar.css";
-import useLoginStatus from "../hooks/useLoginStatus";
+import useProfileInfo from "../hooks/useProfileInfo";
 
 const NavBar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
-  const isLogin = useLoginStatus();
+  var profile = useProfileInfo();
   const toggleActive = () => {
     setHamburgerActive((current) => !current);
+    console.log(profile);
   };
 
   return (
@@ -15,30 +16,50 @@ const NavBar = () => {
       <div
         className={hamburgerActive ? "link_container active" : "link_container"}
       >
-        {isLogin ? (
+        {profile ? (
           <>
-            <a className="link navbar_link" href="#">
+            <Link
+              onClick={toggleActive}
+              className="link navbar_link"
+              to="/Profile"
+            >
               Profile
-            </a>
-            <a className="link navbar_link" href="#">
+            </Link>
+            <Link
+              onClick={toggleActive}
+              className="link navbar_link"
+              to="/Learn"
+            >
               Learn
-            </a>
-            <a className="link navbar_link" href="#">
+            </Link>
+            <Link
+              onClick={toggleActive}
+              className="link navbar_link"
+              to="/Review"
+            >
               Review
-            </a>
-            <a className="link navbar_link" href="#">
+            </Link>
+            <Link onClick={toggleActive} className="link navbar_link" to="/">
               Log out
-            </a>
+            </Link>
           </>
         ) : (
           <>
             {" "}
-            <a className="link navbar_link" href="#">
+            <Link
+              onClick={toggleActive}
+              className="link navbar_link"
+              to="/LogIn"
+            >
               Log in
-            </a>
-            <a className="link navbar_link" href="#">
+            </Link>
+            <Link
+              onClick={toggleActive}
+              className="link navbar_link"
+              to="/SignUp"
+            >
               Sign up
-            </a>
+            </Link>
           </>
         )}
       </div>
