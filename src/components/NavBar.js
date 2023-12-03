@@ -18,11 +18,7 @@ const NavBar = () => {
       >
         {profile ? (
           <>
-            <Link
-              onClick={toggleActive}
-              className="link navbar_link"
-              to="/Home"
-            >
+            <Link onClick={toggleActive} className="link navbar_link" to="/">
               Home
             </Link>
             <Link
@@ -53,11 +49,7 @@ const NavBar = () => {
         ) : (
           <>
             {" "}
-            <Link
-              onClick={toggleActive}
-              className="link navbar_link"
-              to="/Home"
-            >
+            <Link onClick={toggleActive} className="link navbar_link" to="/">
               Home
             </Link>
             <Link
