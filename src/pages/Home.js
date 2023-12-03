@@ -7,7 +7,16 @@ const Home = () => {
   return (
     <>
       {profile ? (
-        <></>
+        <>
+          <div className="container">
+            <Link className="link home-link" to="/Learn">
+              Learn new words
+            </Link>
+            <Link className="link home-link" to="/Review">
+              Review due cards
+            </Link>
+          </div>
+        </>
       ) : (
         <div className="container">
           <div className="text">Welcome to my Flashcards App!</div>
