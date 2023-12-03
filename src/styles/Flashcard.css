@@ -1,0 +1,19 @@
+.flashcard {
+  width: 80%;
+  cursor: pointer;
+  color: var(--black);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-decoration: none;
+  border: solid 2px var(--black);
+  font-weight: bolder;
+  font-size: 2em;
+  border-radius: 10px;
+  text-align: center;
+}
+.blue {
+  background-color: var(--blue);
+}
+.pink {
+  background-color: var(--pink);
+}
