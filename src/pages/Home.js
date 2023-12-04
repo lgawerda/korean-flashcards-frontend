@@ -12,7 +12,7 @@ const Home = () => {
             <Link className="link home-link" to="/Learn">
               Learn new words
             </Link>
-            <Link className="link home-link" to="/Review">
+            <Link className="link home-link pink" to="/Review">
               Review due cards
             </Link>
           </div>
