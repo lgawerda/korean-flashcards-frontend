@@ -6,7 +6,7 @@ const Home = () => {
   var profile = useProfileInfo();
   return (
     <>
-      {profile ? (
+      {!profile ? (
         <>
           <div className="container">
             <Link className="link home-link" to="/Learn">

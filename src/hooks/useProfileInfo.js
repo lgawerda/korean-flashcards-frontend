@@ -9,7 +9,7 @@ const useProfileInfo = () => {
       axios
         .get("http://localhost:2500/user/profile")
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           if (res.data) setProfile(res);
         })
         .catch((err) => {

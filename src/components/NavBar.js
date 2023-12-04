@@ -16,7 +16,7 @@ const NavBar = () => {
       <div
         className={hamburgerActive ? "link_container active" : "link_container"}
       >
-        {profile ? (
+        {!profile ? (
           <>
             <Link onClick={toggleActive} className="link navbar_link" to="/">
               Home
